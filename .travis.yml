@@ -32,9 +32,10 @@ before_install:
 - sudo add-apt-repository -y ppa:deadsnakes/ppa
 - sudo apt update
 - sudo apt install -y python3.9
+- sudo apt install -y python3-pip
 - nvm install node
 - node --version
-- pip install --user awscli
+- pip3 install --user awscli
 #install:
 #- npm install
 #before_cache:
