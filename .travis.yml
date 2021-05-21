@@ -1,6 +1,6 @@
 os: linux
 arch: amd64
-dist: xenial
+dist: bionic
 language: android
 env:
   global:
@@ -33,7 +33,7 @@ before_install:
 - sudo apt -y install python3.8
 - nvm install node
 - node --version
-- pip3 install --user awscli
+- pip3 install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
 install:
 - npm install
 before_cache:
