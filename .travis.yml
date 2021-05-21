@@ -23,6 +23,7 @@ android:
 before_install:
 - pyenv versions
 - python --version
+- pyenv install 3.9.0
 - pyenv global 3.9.0
 - python --version
 - pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
