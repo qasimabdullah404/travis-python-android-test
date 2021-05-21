@@ -34,7 +34,7 @@ before_install:
 - sudo apt install -y python3.9
 - nvm install node
 - node --version
-- pyhton3-pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
+- pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
 #install:
 #- npm install
 #before_cache:
