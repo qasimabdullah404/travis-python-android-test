@@ -21,15 +21,16 @@ android:
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
 before_install:
-- pyenv versions
-- python --version
-- pyenv install 3.9.0b5
-- pyenv global 3.9.0b5
-- python --version
-- pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
+#- pyenv versions
+#- python --version
+#- pyenv install 3.9.0b5
+#- pyenv global 3.9.0b5
+#- python --version
+#- pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
+- sudo apt install python3.8
 - nvm install node
 - node --version
-- pip install --user awscli
+- pip3 install --user awscli
 install:
 - npm install
 before_cache:
