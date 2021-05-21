@@ -27,10 +27,10 @@ before_install:
 #- pyenv global 3.9.0b5
 #- python --version
 #- pip install --user awscli  - yes | sdkmanager "build-tools;28.0.3"
-- sudo apt install software-properties-common
+- sudo apt install -y software-properties-common
 - sudo add-apt-repository ppa:deadsnakes/ppa
 - sudo apt update
-- sudo apt install python3.8
+- sudo apt -y install python3.8
 - nvm install node
 - node --version
 - pip3 install --user awscli
